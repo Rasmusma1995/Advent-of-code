@@ -82,13 +82,11 @@ def get_sum_of_gear_product(d,l):
                     if val is None:
                         continue
                     s.add(val)
-                if len(s) >1 :
+                if len(s) > 1:
                     sum += math.prod([v[0] for v in s])
 
     return sum
 
 print(sum(get_relevant_numbers(input)))
 print(get_sum_of_gear_product(input, number_pos(input)))
-
-
-
+globals().clear()
